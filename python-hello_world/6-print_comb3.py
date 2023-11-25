@@ -5,4 +5,7 @@ for i in range(10):
         elif i > j:
             pass
         else:
-            print("{}{}".format(i,j), end=", ")
+            if ,
+                print()
+            else:
+                print("{}{}".format(i,j), end=", ")
