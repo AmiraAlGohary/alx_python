@@ -6,6 +6,9 @@ stringNumber = str(number)
 lastDigit = stringNumber[-1]
 lastDigit = int(lastDigit)
 
+if number < 0:
+    lastDigit = - lastDigit
+
 if lastDigit > 5:
     print("Last digit of " + str(number) + " is " + str(lastDigit) + " and is greater than 5" )
 
