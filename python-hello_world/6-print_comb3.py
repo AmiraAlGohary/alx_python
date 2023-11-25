@@ -5,4 +5,4 @@ for i in range(10):
         elif i > j:
             pass
         else:
-            print(str(i)+str(j), end=", ")
+            print("{}{}".format(i,j), end=", ")
