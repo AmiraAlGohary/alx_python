@@ -1,7 +1,9 @@
 for i in range(100):
     if i <10:
-        print(str(0) + str(i), end=", ")
-    elif i == 99:
-        print(i)
+        print("{}{}".format(0,i), end=", ")
     else:
-        print(str(i), end=", ")
+        print("{}".format(i), end=", ")
+
+        
+
+        
