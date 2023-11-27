@@ -3,3 +3,5 @@ for i in range(100):
         print("{}{}".format(0,i), end=", ")
     elif i == 99:
         print("{}".format(i))
+    else:
+        print("{}".format(i), end=", ")
