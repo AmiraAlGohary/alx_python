@@ -2,6 +2,6 @@ for i in range(100):
     if i <10:
         print("{}{}".format(0,i), end=", ")
     elif i == 99:
-        print(i)
+        print("{}".format(i))
     # else:
     #     print("{}".format(i), end=", ")
