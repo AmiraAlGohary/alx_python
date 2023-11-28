@@ -1,3 +1,5 @@
 def reverse_string(string):
+    result = ""
     for i in string:
-        print(i)
+        result = i + result
+    return result
