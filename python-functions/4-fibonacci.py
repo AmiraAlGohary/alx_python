@@ -12,7 +12,7 @@ def fibonacci_sequence(n):
         return result
 
     resulted = []
-    if n =<0:
+    if n == 0 or n < 0:
         return resulted
     elif n == 1:
         resulted = [0]
