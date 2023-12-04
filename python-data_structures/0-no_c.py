@@ -8,7 +8,4 @@ def no_c(my_string):
         if i != "c" and i != "C":
             newString = newString + i
     return newString
-
-print(no_c("Holberton School"))
-print(no_c("Chicago"))
-print(no_c("C is fun!"))
+    
