@@ -8,8 +8,3 @@ def print_matrix_integer(matrix=[[]]):
                     print("{:d}".format(j), end="\n")
                 else:
                     print("{:d}".format(j), end=" ")
-
-# matrix = [[]]
-# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-
-# print(print_matrix_integer(matrix))
