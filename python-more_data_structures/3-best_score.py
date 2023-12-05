@@ -6,7 +6,7 @@ def best_score(a_dictionary):
     You can assume that all values are only integers
     You can assume all students have a different scores
     """
-    # if a_dictionary == {}:
+    # if a_dictionary == {} or a_dictionary == None:
     #     return None
     # else:
     #     BiggestValue = max(list(a_dictionary.values()))
@@ -15,7 +15,7 @@ def best_score(a_dictionary):
     #             thebest_score = key
     #     return thebest_score
 
-    if a_dictionary == {}:
+    if a_dictionary == {} or a_dictionary == None:
         return None
     else:
         biggestValue = 0
