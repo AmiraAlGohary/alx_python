@@ -47,7 +47,7 @@ class Square():
         a method used for printing the square with # signs
         """
         if self.__size == 0:
-            print("\n")
+            print()
         elif self.__size > 0:
             side_lenght = self.__size
             drawn_square_line = side_lenght*"#"
