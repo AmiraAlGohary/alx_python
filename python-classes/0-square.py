@@ -1,3 +1,8 @@
+"""
+a python file to write the Square Class
+"""
+
+
 class Square():
     """
     a class that defines a square by private instance attribute: size
