@@ -2,8 +2,9 @@
 a python file for question no. 3
 """
 
-class BaseGeometry:
+class BaseGeometry():
     """
     an empty class
     """
-    pass
+    def __init__(self) -> None:
+        pass
