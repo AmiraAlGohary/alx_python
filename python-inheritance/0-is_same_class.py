@@ -9,6 +9,8 @@ def is_same_class(obj, a_class):
     """
     if a_class == object:
         return False
+    elif type(obj) == bool:
+        return False
     else:
         class_name = type(obj)
         if issubclass(class_name, a_class):
