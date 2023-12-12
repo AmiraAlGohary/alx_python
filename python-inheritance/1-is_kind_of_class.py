@@ -10,7 +10,8 @@ def is_kind_of_class(obj, a_class):
     
     otherwise False.
     """
-    if issubclass(obj, a_class):
+    
+    if issubclass(type(obj), a_class):
         return True
     else:
         return False
