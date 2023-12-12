@@ -7,7 +7,7 @@ class MetaClass:
     a class to override the init_subclass attribute
     """
     def dir(cls):
-        return [attribute for attribute in super().dir() if attribute != "__init_subclass__"]
+        return [attribute for attribute in super().dir() if attribute != "init_subclass"]
 
 class BaseGeometry(MetaClass):
     """
