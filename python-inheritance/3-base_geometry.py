@@ -2,7 +2,7 @@
 a python file for question no. 3
 """
 
-class MetaClass:
+class MetaClass(type):
     """
     a class to override the init_subclass attribute
     """
