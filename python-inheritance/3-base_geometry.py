@@ -20,4 +20,4 @@ class BaseGeometry:
     an empty class
     """
     def dir(cls):
-        return [attribute for attribute in super().dir() if attribute != "__init_subclass__"]
+        return [attribute for attribute in super().dir() if attribute != __init_subclass__]
