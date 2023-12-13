@@ -1,5 +1,5 @@
 """
-a python file for question no. 6
+a python file for question no. 7
 """
 class BaseGeometry():
     """
