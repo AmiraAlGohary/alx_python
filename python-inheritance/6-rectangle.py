@@ -5,12 +5,6 @@ class BaseGeometry():
     """
     a class
     """
-    def __init__(self):
-        """
-        init method
-        """
-        pass
-
     def area(self):
         """
         Public instance method, that raises an Exception with the message: area() is not implemented
