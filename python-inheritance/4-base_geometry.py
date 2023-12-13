@@ -13,7 +13,7 @@ class BaseGeometry():
     """
     a class
     """
-    def area(self):
+    def area(self, area):
         """
         Public instance method, that raises an Exception with the message: area() is not implemented
         """
