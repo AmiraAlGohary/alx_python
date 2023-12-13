@@ -15,7 +15,8 @@ class BaseGeometry(metaclass=MyMeta):
     """
     an empty class
     """
-    pass
+    def __init_subclass__(cls, **kwargs):
+        super().__init_subclass__(**kwargs)
 
 # def __init_subclass__(cls, **kwargs):
 #     super().__init_subclass__(**kwargs)
