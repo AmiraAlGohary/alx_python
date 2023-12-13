@@ -33,19 +33,17 @@ class Rectangle(BaseGeometry):
         self.__width = width
         self.__height = height
 
-    def integer_validator(self, width, height):
-        """
-        Public instance method, that validates width & height.
-        """
-        if not isinstance(width, int):
-            raise TypeError("{} must be an integer".format(width))
-        if width <= 0:
-            raise ValueError("{} must be greater than 0".format(width))
-        
-        if not isinstance(height, int):
-            raise TypeError("{} must be an integer".format(height))
-        if height <= 0:
-            raise ValueError("{} must be greater than 0".format(height))
-
-
-
+        def integer_validator(self, width, height):
+            """
+            Instance method, that validates width & height.
+            """
+            if not isinstance(width, int):
+                raise TypeError("{} must be an integer".format("width"))
+            if width <= 0:
+                raise ValueError("{} must be greater than 0".format("width"))        
+            if not isinstance(height, int):
+                raise TypeError("{} must be an integer".format("height"))
+            if height <= 0:
+                raise ValueError("{} must be greater than 0".format("height"))
+            
+        integer_validator(self, width, height)
