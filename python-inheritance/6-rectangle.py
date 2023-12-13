@@ -29,6 +29,7 @@ class Rectangle(BaseGeometry):
         """
         init method
         """
+        super().__init__
         self.__width = width
         self.__height = height
 
