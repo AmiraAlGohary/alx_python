@@ -6,14 +6,19 @@ class MyMeta(type):
     """
     a metaclass to override the init_subclass attribute
     """
-    def __init_subclass__(cls, **kwargs):
-        super().__init_subclass__(**kwargs)
+    def __dir__(cls):
+        all_attrs = dir(type(cls))
+        return [attribute for attribute in all_attrs if attribute != "__init_subclass__"]
+    
 
 class BaseGeometry(metaclass=MyMeta):
     """
     an empty class
     """
     pass
+
+# def __init_subclass__(cls, **kwargs):
+#     super().__init_subclass__(**kwargs)
 
 # class BaseGeometry:
 #     """
