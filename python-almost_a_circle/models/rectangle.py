@@ -2,7 +2,7 @@
 a python file for rectangle
 """
 
-from base import Base 
+from models.base import Base 
 
 # class Base:
 #     """
