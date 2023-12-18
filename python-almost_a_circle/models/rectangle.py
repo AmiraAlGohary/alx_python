@@ -124,7 +124,12 @@ class Rectangle(Base):
         """
         the_width = self.__width
         the_height = self.__height
-        drawn_width = the_width*"#"
+        x = self.__x
+        y = self.__y
+        drawn_width = x*" " + the_width*"#"
+        
+        for i in range(y):
+            print("")
         for i in range(the_height):
             print(drawn_width)
 
