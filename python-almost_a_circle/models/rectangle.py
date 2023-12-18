@@ -29,7 +29,7 @@ class Rectangle(Base):
 
         if x < 0:
             raise ValueError("{} must be >= 0.".format("x"))
-        if y <= 0:
+        if y < 0:
             raise ValueError("{} must be >= 0.".format("y"))
 
         self.__width = width
