@@ -134,3 +134,4 @@ class Rectangle(Base):
         """
         result = "[Rectangle] (" + str(self.id) + ") " + str(self.x) + "/" + str(self.y) + " - " + str(self.width) + "/" + str(self.height)
         return result
+    
