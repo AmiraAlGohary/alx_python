@@ -13,6 +13,25 @@ class Rectangle(Base):
         init method
         """
         super().__init__(id)
+        if not isinstance(width, int):
+            raise TypeError("{} must be an integer".format("width"))
+        if not isinstance(height, int):
+            raise TypeError("{} must be an integer".format("height"))
+        if not isinstance(x, int):
+            raise TypeError("{} must be an integer".format("x"))
+        if not isinstance(y, int):
+            raise TypeError("{} must be an integer".format("y"))
+        
+        if width <= 0:
+            raise ValueError("{}  must be > 0".format("width"))
+        if height <= 0:
+            raise ValueError("{}  must be > 0".format("height"))
+
+        if x < 0:
+            raise ValueError("{} must be >= 0.".format("x"))
+        if y <= 0:
+            raise ValueError("{} must be >= 0.".format("y"))
+
         self.__width = width
         self.__height = height
         self.__x = x
