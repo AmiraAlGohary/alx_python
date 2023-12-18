@@ -141,10 +141,22 @@ class Rectangle(Base):
         result = "[Rectangle] (" + str(self.id) + ") " + str(self.x) + "/" + str(self.y) + " - " + str(self.width) + "/" + str(self.height)
         return result
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         a public method that assigns an argument to each attribute
         """
+        for key in kwargs.keys():
+            if key == "id":
+                self.id = kwargs[key]
+            if key == "width":
+                self.__width = kwargs[key]
+            if key == "height":
+                self.__height = kwargs[key]
+            if key == "x":
+                self.__x = kwargs[key]
+            if key == "y":
+                self.__y = kwargs[key]
+
         if len(args) >=1:
             self.id = args[0]
         if len(args) >=2:
