@@ -2,8 +2,8 @@
 a python file for square
 """
 
-# from models.rectangle import Rectangle 
-from rectangle import Rectangle
+from models.rectangle import Rectangle 
+# from rectangle import Rectangle
 
 class Square(Rectangle):
     """
@@ -14,4 +14,3 @@ class Square(Rectangle):
         init method
         """
         super().__init__(self, size, size, x=0, y=0, id=None)
-        
