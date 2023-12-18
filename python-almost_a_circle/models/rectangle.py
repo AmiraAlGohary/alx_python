@@ -117,3 +117,13 @@ class Rectangle(Base):
         """
         the_area = self.__height * self.__width
         return the_area
+    
+    def display(self):
+        """
+        a method the prints the rectangle in # signs
+        """
+        the_width = self.__width
+        the_height = self.__height
+        drawn_width = the_width*"#"
+        for i in range(the_height):
+            print(drawn_width)
