@@ -14,3 +14,11 @@ class Square(Rectangle):
         init method
         """
         super().__init__(self, size, size, x=0, y=0, id=None)
+        self.__size = size
+
+    def __str__(self):
+        """
+        a square print method
+        """
+        result = "[Square] (" + str(self.id) + ") " + str(self.x) + "/" + str(self.y) + " - " + str(self.__size)
+        return result
