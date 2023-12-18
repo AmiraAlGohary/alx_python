@@ -3,6 +3,7 @@ a python file for rectangle
 """
 
 from models.base import Base 
+# from base import Base
 
 class Rectangle(Base):
     """
@@ -139,4 +140,18 @@ class Rectangle(Base):
         """
         result = "[Rectangle] (" + str(self.id) + ") " + str(self.x) + "/" + str(self.y) + " - " + str(self.width) + "/" + str(self.height)
         return result
-    
+
+    def update(self, *args):
+        """
+        a public method that assigns an argument to each attribute
+        """
+        if len(args) >=1:
+            self.id = args[0]
+        if len(args) >=2:
+            self.__width = args[1]
+        if len(args) >=3:
+            self.__height = args[2]
+        if len(args) >=4:
+            self.__x = args[3]
+        if len(args) >=5:
+            self.__y = args[4]
