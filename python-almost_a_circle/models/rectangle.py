@@ -127,3 +127,10 @@ class Rectangle(Base):
         drawn_width = the_width*"#"
         for i in range(the_height):
             print(drawn_width)
+
+    def __str__(self):
+        """
+        a rectangle print method
+        """
+        result = "[Rectangle] (" + str(self.id) + ") " + str(self.x) + "/" + str(self.y) + " - " + str(self.width) + "/" + str(self.height)
+        return result
