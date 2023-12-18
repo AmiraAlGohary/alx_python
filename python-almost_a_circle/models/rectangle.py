@@ -50,6 +50,10 @@ class Rectangle(Base):
         """
         a setter for width
         """
+        if not isinstance(width, int):
+            raise TypeError("{} must be an integer".format("width"))
+        if width <= 0:
+            raise ValueError("{}  must be > 0".format("width"))
         self.__width = width
     
     @property
@@ -64,6 +68,10 @@ class Rectangle(Base):
         """
         a setter for height
         """
+        if not isinstance(height, int):
+            raise TypeError("{} must be an integer".format("height"))
+        if height <= 0:
+            raise ValueError("{}  must be > 0".format("height"))
         self.__height = height
     
     @property
@@ -78,6 +86,10 @@ class Rectangle(Base):
         """
         a setter for x
         """
+        if not isinstance(x, int):
+            raise TypeError("{} must be an integer".format("x"))
+        if x < 0:
+            raise ValueError("{} must be >= 0.".format("x"))
         self.__x = x
     
     @property
@@ -92,4 +104,8 @@ class Rectangle(Base):
         """
         a setter for y
         """
+        if not isinstance(y, int):
+            raise TypeError("{} must be an integer".format("y"))
+        if y < 0:
+            raise ValueError("{} must be >= 0.".format("y"))
         self.__y = y
