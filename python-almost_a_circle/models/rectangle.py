@@ -23,9 +23,9 @@ class Rectangle(Base):
             raise TypeError("{} must be an integer".format("y"))
         
         if width <= 0:
-            raise ValueError("{}  must be > 0".format("width"))
+            raise ValueError("{} must be > 0".format("width"))
         if height <= 0:
-            raise ValueError("{}  must be > 0".format("height"))
+            raise ValueError("{} must be > 0".format("height"))
 
         if x < 0:
             raise ValueError("{} must be >= 0.".format("x"))
@@ -53,7 +53,7 @@ class Rectangle(Base):
         if not isinstance(width, int):
             raise TypeError("{} must be an integer".format("width"))
         if width <= 0:
-            raise ValueError("{}  must be > 0".format("width"))
+            raise ValueError("{} must be > 0".format("width"))
         self.__width = width
     
     @property
@@ -71,7 +71,7 @@ class Rectangle(Base):
         if not isinstance(height, int):
             raise TypeError("{} must be an integer".format("height"))
         if height <= 0:
-            raise ValueError("{}  must be > 0".format("height"))
+            raise ValueError("{} must be > 0".format("height"))
         self.__height = height
     
     @property
