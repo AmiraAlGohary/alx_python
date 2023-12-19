@@ -20,5 +20,5 @@ class Square(Rectangle):
         """
         a square print method
         """
-        result = "[Square] (" + str(self.id) + ") " + str(self.x) + "/" + str(self.y) + " - " + str(self.size)
+        result = "[Square] (" + str(self.id) + ") " + str(self.x) + "/" + str(self.y) + " - " + str(self.width)
         return result
