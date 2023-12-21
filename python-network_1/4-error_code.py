@@ -1,14 +1,13 @@
 import requests
 import sys
 
-def get_something(url):
+def display_response_body(url):
     response = requests.get(url)
-    the_body = response.content
+    print(response.text)
+
     if response.status_code >= 400:
         print("Error code: " + str(response.status_code))
-    else:
-        return the_body
 
 url = sys.argv[1]
 
-get_something(url)
+display_response_body(url)
