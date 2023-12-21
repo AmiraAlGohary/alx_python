@@ -5,8 +5,8 @@ import sys
 def get_github_id(username, password):
     url = f"https://api.github.com/user"
     response = requests.get(url, auth=(username, password))
-    if response.status_code == 200:
-        user_data = response.json()
+    
+    user_data = response.json()
     return user_data['id']
 
 username = sys.argv[1]
