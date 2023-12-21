@@ -6,6 +6,7 @@ def search_user(the_letter):
         payload = {"q": the_letter}
     else:
         payload = {"q": ""}
+        
     reponse = requests.post("http://0.0.0.0:5000/search_user", data=payload)
 
     if reponse.headers['content-type'] == 'application/json':
