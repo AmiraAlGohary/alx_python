@@ -4,7 +4,7 @@ import sys
 def send_post_request(url, email):
     payload = {'email': email}
     response = requests.post(url, data=payload)
-    print("Your email is: " + str(response.text))
+    print(response.text)
 
 
 url = sys.argv[1]
