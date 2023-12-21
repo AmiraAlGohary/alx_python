@@ -18,6 +18,9 @@ def search_user(the_letter):
     else:
         print("Not a valid JSON")
 
-the_letter = sys.argv[1]
+if len(sys.argv) == 2:
+    the_letter = sys.argv[1]
+else:
+    the_letter = ""
 
 search_user(the_letter)
