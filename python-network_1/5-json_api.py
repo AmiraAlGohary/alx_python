@@ -6,13 +6,13 @@ def search_user(the_letter):
         payload = {"q": the_letter}
     else:
         payload = {"q": ""}
-        
+
     reponse = requests.post("http://0.0.0.0:5000/search_user", data=payload)
 
     if reponse.headers['content-type'] == 'application/json':
         data = reponse.json()
         if data:
-            print("[{}] {}".fotmat(data["id"], data["name"]))
+            print("[{}] {}".format(data["id"], data["name"]))
         else:
             print("No result")
     else:
